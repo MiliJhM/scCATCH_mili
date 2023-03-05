@@ -1,4 +1,4 @@
-Package: scCATCH
+Package: scCATCH_mili
 Type: Package
 Title: Single Cell Cluster-Based Annotation Toolkit for Cellular Heterogeneity
 Version: 3.2.1
@@ -22,4 +22,5 @@ Imports:
     progress,
     stats,
     crayon,
-    reshape2
+    reshape2,
+    dplyr
