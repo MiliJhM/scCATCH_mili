@@ -100,6 +100,7 @@
     clu_pair <- NULL
     for (i in 1:length(clu_num)) {
         d1 <- data.frame(cluster1 = rep(clu_num[i], (length(clu_num) - 1)), cluster2 = clu_num[-i], stringsAsFactors = FALSE)
+        print(paste('Binding clu_pair data.frame', i , length(clu_num), 'in total.'))
         clu_pair <- dplyr::bind_rows(clu_pair, d1)
     }
     if (cluster[1] != "All") {
